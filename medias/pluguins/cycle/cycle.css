@@ -1,0 +1,49 @@
+/*
+************
+*BANNER
+***********
+*/
+
+#main-slide{position: relative;display: inline-block;width: 100%;height: 437px;}
+#random{padding: 0;margin: 0 auto; width: 100%!important;}
+#random > div{height: 454px;width: 100%!important;background-repeat:no-repeat!important;}
+
+#slide-controls{position: absolute; width: 99%; height: 120px; top: 250px;z-index: 9999;border-top: 1px solid;}
+#prev1,#next1{font-size: 104px; color: #fff; cursor: pointer;text-shadow: 1px 2px 2px #000; position: absolute; top: 0px;}
+#prev1{   
+	left: 40px;
+	-moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+}
+#next1{
+	right: 40px;
+	-moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+}
+#slide-nav{height:7px;width: 100%; position: absolute;bottom: 0px; z-index: 999;}
+#slide-btn{width: 500px; margin: 0 auto;}
+#slide-btn a{text-indent: -10000px;background:#ccc;display: block;float: left;height: 7px;margin-right: 15px;width: 190px;}
+#slide-btn a.activeSlide{background: #EC4E4F; }
+
+#main-slide .cont_1{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 50px;}
+
+#main-slide .cont_1 p{
+    color: #242d38;
+}
+#main-slide .cont_1 h1{
+    color: #242d38;
+    display: inline-block;
+    font-size: 4em;
+    font-weight: 900;}
+
+#main-slide .cont_1 h1 span{color: #a0a5a9 !important;
+    display: block;
+    font-size: 0.4em !important;
+    margin-bottom: -100px;}

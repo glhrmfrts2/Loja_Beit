@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo</title>
+	<link rel="stylesheet" href="assets/carousel.css">
+
+	<script src="jquery.js"></script>
+	<script src="carousel.js"></script>
+</head>
+
+<style type="text/css">
+.owl-carousel{margin: 200px auto;width: 50%;}
+	.owl-item{background:#ccc;width: 100%;}
+
+	#owl-demo .item{float: left;}
+	#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+}
+</style>
+<body>
+<!-- Set up your HTML -->
+<div id="owl-demo" class="owl-carousel owl-theme">
+ 
+  <div class="item"><img src="assets/fullimage1.jpg" alt="The Last of us"></div>
+  <div class="item"><img src="assets/fullimage2.jpg" alt="GTA V"></div>
+  <div class="item"><img src="assets/fullimage3.jpg" alt="Mirror Edge"></div>
+ 
+</div>
+
+
+<script type="text/javascript">
+
+	 $(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+ 
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true
+ 
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+ 
+  });
+ 
+});
+
+</script>
+</body>
+</html>

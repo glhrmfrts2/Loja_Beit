@@ -1,0 +1,17 @@
+/*div.painel-adm{padding-left: 100px;}*/
+
+nav.nav-primary ul li{float: left;margin-right: 5px;}
+.top-bar,.top-bar-section ul li,section.top-bar-section,
+section.top-bar-section a {
+	background: #444!important;
+}
+
+section.top-bar-section a{
+	background: none repeat scroll 0 0 #444 !important;
+    color: #e5e5e5 !important;
+    font-size: 12px !important;
+    text-transform: uppercase !important;
+    font-weight: 600!important;
+}
+
+section.top-bar-section li.active a{background: #fff!important;color: #999!important;}
