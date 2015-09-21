@@ -1,4 +1,5 @@
 $blue: #017;
+$light-blue: #0066A9;
 $purple: #3d165e;
 $orange: #ff7200;
 $breakpoint-large: 1000px;
@@ -9,7 +10,6 @@ $breakpoint-large: 1000px;
 			li {
 				a {
 					background-color: $bg;
-					border-top: 1px solid lighten($bg, 10%);
 					border-bottom: 1px solid lighten($bg, 10%);
 
 					&:hover {
@@ -57,6 +57,10 @@ body, h1, h2, h3, h4, h5, button, a {
 
 .no-padding {
 	padding: 0 !important;
+}
+
+.no-margin {
+	margin: 0 !important;
 }
 
 .btn-search {
@@ -187,7 +191,7 @@ header {
 
 			@include menu(menu-livros, $orange);
 			@include menu(menu-uniformes, $purple);
-			@include menu(menu-materiais, $blue);
+			@include menu(menu-materiais, $light-blue);
 		}
 	}
 }
@@ -284,6 +288,81 @@ header {
 
 	.preco {
 		font-size: 18px;
+	}
+}
+
+.menu-aux {
+
+	@media screen and (min-width: $breakpoint-large) {
+		width: 21% !important;
+
+		img {
+			width:100%;
+		}
+	}
+
+	ul {
+		li {
+			a {
+				color: #555 !important;
+				display:block;
+				width:100%;
+				padding: 4px 8px;
+				background-color: #e7e7e7;
+				border-top: 1px solid #f7f7f7;
+				font-size: 14px;
+
+				i {
+					color: #555 !important;
+					margin-right: 5px;
+					font-size: 12px;
+				}
+
+				&:hover {
+					color: $blue !important;
+					background-color: #ededed;
+				}
+			}
+		}
+	}
+}
+
+.cat-produtos {
+
+	@media screen and (min-width: $breakpoint-large) {
+		width: 79% !important;
+	}
+
+	.p-list {
+		float:left;
+	}
+
+	.paginate {
+		float:left;
+		width:100%;
+		text-align: center !important;
+
+		label, select, input {
+			display:inline-block;
+		}
+
+		select {
+			width:100px;
+		}
+
+		label, select {
+			margin: 0 10px;
+		}
+
+		.numbers {
+			padding-top: 20px;
+
+			@media screen and (min-width: $breakpoint-large) {
+				ul {
+					margin-left: 30% !important;
+				}
+			}
+		}
 	}
 }
 

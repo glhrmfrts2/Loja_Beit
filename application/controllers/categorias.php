@@ -18,6 +18,11 @@ class Categorias extends CI_Controller {
 		$this->gerenciar();
 	}
 
+	public function site()
+	{
+		
+	}
+
 	public function gerenciar()
 	{	
 		//lista os dados do banco de dados

@@ -35,6 +35,12 @@ class Appsite extends CI_Controller {
 		load_template();
 	}
 
+	public function lista()
+	{
+		set_tema('conteudo', load_modulo('categorias','','application'));
+		load_template();
+	}
+
 	
 
 	public function carrinho()

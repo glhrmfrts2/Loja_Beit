@@ -43,114 +43,119 @@ body, h1, h2, h3, h4, h5, button, a {
 }
 
 /* line 62, ../sass/style.scss */
+.no-margin {
+  margin: 0 !important;
+}
+
+/* line 66, ../sass/style.scss */
 .btn-search {
   padding: 0 10px !important;
 }
 
-/* line 67, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 .c-purple {
   color: #3d165e;
 }
 
-/* line 73, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 .bg-purple {
   background-color: #3d165e;
 }
-/* line 76, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 .bg-orange {
   background-color: #ff7200;
 }
 
-/* line 81, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 .button {
   padding: 6px !important;
   width: 100%;
   color: white !important;
 }
 
-/* line 87, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 figure.zoom {
   margin: 0;
   transition: all 0.2s ease;
   overflow: hidden;
   max-height: 230px;
 }
-/* line 93, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 figure.zoom img {
   transition: all 0.2s ease;
 }
-/* line 97, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 figure.zoom img:hover {
   transform: scale(1.1);
 }
 
 @media screen and (min-width: 1000px) {
-  /* line 102, ../sass/style.scss */
+  /* line 106, ../sass/style.scss */
   header {
     min-height: 140px;
   }
 }
-/* line 108, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 header #main-header {
   background-color: #e7e7e7;
 }
 @media screen and (min-width: 1000px) {
-  /* line 108, ../sass/style.scss */
+  /* line 112, ../sass/style.scss */
   header #main-header {
     max-height: 60px;
     overflow: visible;
   }
-  /* line 115, ../sass/style.scss */
+  /* line 119, ../sass/style.scss */
   header #main-header .row.pre-header {
     max-height: 60px;
     overflow: visible;
   }
 }
-/* line 121, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 header #main-header .logo-container {
   position: relative;
   top: 0px;
   min-height: 60px;
 }
-/* line 127, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 header #main-header .logo-container .logo {
   margin: 0px;
 }
-/* line 130, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 header #main-header .logo-container .logo img {
   position: absolute;
 }
-/* line 136, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 header #main-header .carrinho-preco {
   color: #017;
 }
 @media screen and (min-width: 1000px) {
-  /* line 140, ../sass/style.scss */
+  /* line 144, ../sass/style.scss */
   header #main-header .carrinho-preco .precos {
     position: relative;
     top: 20px;
     float: left;
   }
-  /* line 146, ../sass/style.scss */
+  /* line 150, ../sass/style.scss */
   header #main-header .carrinho-preco img {
     position: relative;
     top: 10px;
   }
 }
-/* line 152, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 header #main-header .carrinho-preco span#preco-total {
   font-size: 1.25em;
 }
-/* line 159, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 header #main-header .lista-cat ul:not(.nav-child) {
   margin: 0;
 }
-/* line 162, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 header #main-header .lista-cat ul:not(.nav-child) li {
   display: inline-block;
   position: relative;
 }
-/* line 166, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 header #main-header .lista-cat ul:not(.nav-child) li ul.nav-child {
   margin: 0;
   display: none;
@@ -158,11 +163,11 @@ header #main-header .lista-cat ul:not(.nav-child) li ul.nav-child {
   z-index: 500;
   width: 100%;
 }
-/* line 173, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 header #main-header .lista-cat ul:not(.nav-child) li ul.nav-child li {
   display: block !important;
 }
-/* line 176, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 header #main-header .lista-cat ul:not(.nav-child) li ul.nav-child li a {
   display: block;
   width: 100%;
@@ -170,74 +175,71 @@ header #main-header .lista-cat ul:not(.nav-child) li ul.nav-child li a {
   font-size: 12px;
   padding: 5px 10px;
 }
-/* line 10, ../sass/style.scss */
+/* line 11, ../sass/style.scss */
 header #main-header .lista-cat .menu-livros ul li a {
   background-color: #ff7200;
-  border-top: 1px solid #ff8e33;
   border-bottom: 1px solid #ff8e33;
 }
 /* line 15, ../sass/style.scss */
 header #main-header .lista-cat .menu-livros ul li a:hover {
   background-color: #ff8e33;
 }
-/* line 10, ../sass/style.scss */
+/* line 11, ../sass/style.scss */
 header #main-header .lista-cat .menu-uniformes ul li a {
   background-color: #3d165e;
-  border-top: 1px solid #582087;
   border-bottom: 1px solid #582087;
 }
 /* line 15, ../sass/style.scss */
 header #main-header .lista-cat .menu-uniformes ul li a:hover {
   background-color: #582087;
 }
-/* line 10, ../sass/style.scss */
+/* line 11, ../sass/style.scss */
 header #main-header .lista-cat .menu-materiais ul li a {
-  background-color: #017;
-  border-top: 1px solid #0018aa;
-  border-bottom: 1px solid #0018aa;
+  background-color: #0066A9;
+  border-bottom: 1px solid #0085dc;
 }
 /* line 15, ../sass/style.scss */
 header #main-header .lista-cat .menu-materiais ul li a:hover {
-  background-color: #0018aa;
+  background-color: #0085dc;
 }
 
-/* line 195, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 .container {
   padding-top: 20px;
 }
 
-/* line 199, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 #buscar {
   margin-top: 20px;
 }
-/* line 203, ../sass/style.scss */
+/* line 207, ../sass/style.scss */
 #buscar input {
   height: 41px;
 }
 
-/* line 208, ../sass/style.scss */
+/* line 212, ../sass/style.scss */
 .main-block {
   border: 1px solid #e7e7e7;
   padding: 15px;
 }
-/* line 213, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .main-block .mb-header {
   padding: 2px 10px;
 }
-/* line 216, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .main-block .mb-header h1, .main-block .mb-header h2, .main-block .mb-header h3, .main-block .mb-header h4 {
   color: white !important;
 }
-/* line 221, ../sass/style.scss */
+/* line 225, ../sass/style.scss */
 .main-block .mb-body {
   padding: 15px 0;
 }
 
-/* line 226, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .produtos-slider {
   padding: 0px 60px;
 }
-/* line 229, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 .produtos-slider .slick-arrow {
   background-color: transparent;
   display: inline-block;
@@ -248,50 +250,121 @@ header #main-header .lista-cat .menu-materiais ul li a:hover {
   z-index: 500;
   outline: none;
 }
-/* line 239, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 .produtos-slider .slick-arrow.slick-prev {
   left: 0px;
   top: 35%;
 }
-/* line 244, ../sass/style.scss */
+/* line 248, ../sass/style.scss */
 .produtos-slider .slick-arrow.slick-next {
   right: 0px;
   top: 35%;
 }
-/* line 249, ../sass/style.scss */
+/* line 253, ../sass/style.scss */
 .produtos-slider .slick-arrow:hover {
   opacity: 0.75;
 }
 
-/* line 255, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 .produto {
   padding: 10px;
   text-align: center !important;
 }
-/* line 260, ../sass/style.scss */
+/* line 264, ../sass/style.scss */
 .produto a {
   outline: none;
   color: #555;
 }
-/* line 266, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 .produto h5 {
   margin: 0;
   margin-bottom: 5px;
 }
-/* line 272, ../sass/style.scss */
+/* line 276, ../sass/style.scss */
 .produto figure .produto-thumb {
   width: 100%;
 }
-/* line 279, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
 .produto:hover figure.zoom img {
   transform: scale(1.1);
 }
-/* line 285, ../sass/style.scss */
+/* line 289, ../sass/style.scss */
 .produto .preco {
   font-size: 18px;
 }
 
-/* line 290, ../sass/style.scss */
+@media screen and (min-width: 1000px) {
+  /* line 294, ../sass/style.scss */
+  .menu-aux {
+    width: 21% !important;
+  }
+  /* line 299, ../sass/style.scss */
+  .menu-aux img {
+    width: 100%;
+  }
+}
+/* line 306, ../sass/style.scss */
+.menu-aux ul li a {
+  color: #555 !important;
+  display: block;
+  width: 100%;
+  padding: 4px 8px;
+  background-color: #e7e7e7;
+  border-top: 1px solid #f7f7f7;
+  font-size: 14px;
+}
+/* line 315, ../sass/style.scss */
+.menu-aux ul li a i {
+  color: #555 !important;
+  margin-right: 5px;
+  font-size: 12px;
+}
+/* line 321, ../sass/style.scss */
+.menu-aux ul li a:hover {
+  color: #017 !important;
+  background-color: #ededed;
+}
+
+@media screen and (min-width: 1000px) {
+  /* line 330, ../sass/style.scss */
+  .cat-produtos {
+    width: 79% !important;
+  }
+}
+/* line 336, ../sass/style.scss */
+.cat-produtos .p-list {
+  float: left;
+}
+/* line 340, ../sass/style.scss */
+.cat-produtos .paginate {
+  float: left;
+  width: 100%;
+  text-align: center !important;
+}
+/* line 345, ../sass/style.scss */
+.cat-produtos .paginate label, .cat-produtos .paginate select, .cat-produtos .paginate input {
+  display: inline-block;
+}
+/* line 349, ../sass/style.scss */
+.cat-produtos .paginate select {
+  width: 100px;
+}
+/* line 353, ../sass/style.scss */
+.cat-produtos .paginate label, .cat-produtos .paginate select {
+  margin: 0 10px;
+}
+/* line 357, ../sass/style.scss */
+.cat-produtos .paginate .numbers {
+  padding-top: 20px;
+}
+@media screen and (min-width: 1000px) {
+  /* line 361, ../sass/style.scss */
+  .cat-produtos .paginate .numbers ul {
+    margin-left: 30% !important;
+  }
+}
+
+/* line 369, ../sass/style.scss */
 #the-footer {
   margin-top: 20px;
   padding-top: 10px;
@@ -299,21 +372,21 @@ header #main-header .lista-cat .menu-materiais ul li a:hover {
   min-height: 100px;
 }
 @media screen and (min-width: 1000px) {
-  /* line 297, ../sass/style.scss */
+  /* line 376, ../sass/style.scss */
   #the-footer .footer-logo {
     float: left;
   }
-  /* line 301, ../sass/style.scss */
+  /* line 380, ../sass/style.scss */
   #the-footer .footer-links {
     float: right !important;
     text-align: right;
   }
 }
-/* line 307, ../sass/style.scss */
+/* line 386, ../sass/style.scss */
 #the-footer .footer-links {
   text-transform: uppercase;
 }
-/* line 308, ../sass/style.scss */
+/* line 387, ../sass/style.scss */
 #the-footer .footer-links a {
   color: white !important;
 }

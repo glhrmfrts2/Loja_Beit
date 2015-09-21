@@ -69,7 +69,7 @@
 							1 item em estoque
 						</span>
 						<a href="#" class="button">
-							Escolher Opções
+							Adicionar ao carrinho
 						</a>
 					</div>
 
