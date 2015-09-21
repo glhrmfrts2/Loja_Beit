@@ -1,0 +1,313 @@
+$blue: #017;
+$purple: #3d165e;
+$orange: #ff7200;
+$breakpoint-large: 1000px;
+
+@mixin menu($class, $bg) {
+	.#{$class} {
+		ul {
+			li {
+				a {
+					background-color: $bg;
+					border-top: 1px solid lighten($bg, 10%);
+					border-bottom: 1px solid lighten($bg, 10%);
+
+					&:hover {
+						background-color: lighten($bg, 10%);
+					}
+				}
+			}
+		}
+	}
+}
+
+@font-face {
+    font-family: 'MyriadProCondensed', Arial, sans-serif;
+    src: url('../fonts/myriadpro-cond-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-size: 14px !important;
+	background-image: url('../images/bg_body.jpg');
+	letter-spacing: -0.5px;
+}
+
+body, h1, h2, h3, h4, h5, button, a {
+	font-family: 'Roboto', Arial, sans-serif !important;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.block {
+	display: block;
+	width:100%;
+}
+
+.font-medium {
+	font-size: 1.25em;
+}
+
+.no-style {
+	list-style-type: none;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.btn-search {
+	padding: 0 10px !important;
+}
+
+.c {
+	&-purple {
+		color: $purple;
+	}
+}
+
+.bg {
+	&-purple {
+		background-color: $purple;
+	}
+	&-orange {
+		background-color: $orange;
+	}
+}
+
+.button {
+	padding: 6px !important;
+	width:100%;
+	color:white !important;
+}
+
+figure.zoom {
+	margin: 0;
+	transition: all 0.2s ease;
+	overflow: hidden;
+	max-height: 230px;
+
+	img {
+		transition: all 0.2s ease;
+	}
+
+	img:hover {
+		transform: scale(1.1);
+	}
+}
+
+header {
+
+	@media screen and (min-width: $breakpoint-large) {
+		min-height: 140px;
+	}
+
+	#main-header {
+		background-color: #e7e7e7;
+
+		@media screen and (min-width: $breakpoint-large) {
+			max-height: 60px;
+			overflow: visible;
+
+			.row.pre-header {
+				max-height: 60px;
+				overflow: visible;
+			}
+		}
+
+		.logo-container {
+
+			position:relative;
+			top: 0px;
+			min-height: 60px;
+
+			.logo {
+				margin: 0px;
+
+				img {
+					position: absolute;
+				}
+			}
+		}
+
+		.carrinho-preco {
+			color: $blue;
+			
+			@media screen and (min-width: $breakpoint-large) {
+				.precos {
+					position: relative;
+					top: 20px;
+					float:left;
+				}
+
+				img {
+					position: relative;
+					top: 10px;
+				}
+			}
+
+			span#preco-total {
+				font-size: 1.25em;
+			}
+		}
+
+		.lista-cat {
+
+			ul:not(.nav-child) {
+				margin: 0;
+
+				li {
+					display:inline-block;
+					position:relative;
+
+					ul.nav-child {
+						margin: 0;
+						display:none;
+						position:absolute;
+						z-index: 500;
+						width:100%;
+
+						li {
+							display:block !important;
+
+							a {
+								display:block;
+								width:100%;
+								color: white !important;
+								font-size: 12px;
+								padding: 5px 10px;
+							}
+						}
+					}
+				}
+			}
+
+			@include menu(menu-livros, $orange);
+			@include menu(menu-uniformes, $purple);
+			@include menu(menu-materiais, $blue);
+		}
+	}
+}
+
+.container {
+	padding-top: 20px;
+}
+
+#buscar {
+
+	margin-top: 20px;
+
+	input {
+		height: 41px;
+	}
+}
+
+.main-block {
+
+	border: 1px solid #e7e7e7;
+	padding: 15px;
+
+	.mb-header {
+		padding: 2px 10px;
+		
+		h1, h2, h3, h4 {
+			color: white !important;
+		}
+	}
+
+	.mb-body {
+		padding: 15px 0;
+	}
+}
+
+.produtos-slider {
+	padding: 0px 60px;
+
+	.slick-arrow {
+		background-color: transparent;
+    	display: inline-block;
+    	color: black;
+    	padding: 8px 16px;
+    	font-size: 22px;
+    	position: absolute;
+    	z-index: 500;
+    	outline: none;
+
+    	&.slick-prev {
+		    left: 0px;
+		    top: 35%;
+		}
+
+		&.slick-next {
+			right: 0px;
+			top: 35%;
+		}
+
+		&:hover {
+			opacity: 0.75;
+		}
+	}
+}
+
+.produto {
+
+	padding: 10px;
+	text-align: center !important;
+
+	a {
+		outline:none;
+		color: #555;
+		
+	}
+
+	h5 {
+		margin: 0;
+		margin-bottom: 5px;
+	}
+
+	figure {
+		.produto-thumb {
+			width: 100%;
+		}
+	}
+
+	&:hover {
+		figure.zoom {
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	.preco {
+		font-size: 18px;
+	}
+}
+
+#the-footer {
+	margin-top: 20px;
+	padding-top: 10px;
+	background-color: #a5a5a5;
+	min-height: 100px;
+
+	@media screen and (min-width: $breakpoint-large) {
+		.footer-logo {
+			float:left;
+		}
+
+		.footer-links {
+			float:right !important;
+			text-align: right;
+		}
+	}
+
+	.footer-links {
+		a {
+			color: white !important;
+		}
+		text-transform: uppercase;
+	}
+}

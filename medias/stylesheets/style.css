@@ -1,0 +1,319 @@
+@font-face {
+  font-family: 'MyriadProCondensed', Arial, sans-serif;
+  src: url("../fonts/myriadpro-cond-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 31, ../sass/style.scss */
+body {
+  font-size: 14px !important;
+  background-image: url("../images/bg_body.jpg");
+  letter-spacing: -0.5px;
+}
+
+/* line 37, ../sass/style.scss */
+body, h1, h2, h3, h4, h5, button, a {
+  font-family: 'Roboto', Arial, sans-serif !important;
+}
+
+/* line 41, ../sass/style.scss */
+.full-width {
+  width: 100%;
+}
+
+/* line 45, ../sass/style.scss */
+.block {
+  display: block;
+  width: 100%;
+}
+
+/* line 50, ../sass/style.scss */
+.font-medium {
+  font-size: 1.25em;
+}
+
+/* line 54, ../sass/style.scss */
+.no-style {
+  list-style-type: none;
+}
+
+/* line 58, ../sass/style.scss */
+.no-padding {
+  padding: 0 !important;
+}
+
+/* line 62, ../sass/style.scss */
+.btn-search {
+  padding: 0 10px !important;
+}
+
+/* line 67, ../sass/style.scss */
+.c-purple {
+  color: #3d165e;
+}
+
+/* line 73, ../sass/style.scss */
+.bg-purple {
+  background-color: #3d165e;
+}
+/* line 76, ../sass/style.scss */
+.bg-orange {
+  background-color: #ff7200;
+}
+
+/* line 81, ../sass/style.scss */
+.button {
+  padding: 6px !important;
+  width: 100%;
+  color: white !important;
+}
+
+/* line 87, ../sass/style.scss */
+figure.zoom {
+  margin: 0;
+  transition: all 0.2s ease;
+  overflow: hidden;
+  max-height: 230px;
+}
+/* line 93, ../sass/style.scss */
+figure.zoom img {
+  transition: all 0.2s ease;
+}
+/* line 97, ../sass/style.scss */
+figure.zoom img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 1000px) {
+  /* line 102, ../sass/style.scss */
+  header {
+    min-height: 140px;
+  }
+}
+/* line 108, ../sass/style.scss */
+header #main-header {
+  background-color: #e7e7e7;
+}
+@media screen and (min-width: 1000px) {
+  /* line 108, ../sass/style.scss */
+  header #main-header {
+    max-height: 60px;
+    overflow: visible;
+  }
+  /* line 115, ../sass/style.scss */
+  header #main-header .row.pre-header {
+    max-height: 60px;
+    overflow: visible;
+  }
+}
+/* line 121, ../sass/style.scss */
+header #main-header .logo-container {
+  position: relative;
+  top: 0px;
+  min-height: 60px;
+}
+/* line 127, ../sass/style.scss */
+header #main-header .logo-container .logo {
+  margin: 0px;
+}
+/* line 130, ../sass/style.scss */
+header #main-header .logo-container .logo img {
+  position: absolute;
+}
+/* line 136, ../sass/style.scss */
+header #main-header .carrinho-preco {
+  color: #017;
+}
+@media screen and (min-width: 1000px) {
+  /* line 140, ../sass/style.scss */
+  header #main-header .carrinho-preco .precos {
+    position: relative;
+    top: 20px;
+    float: left;
+  }
+  /* line 146, ../sass/style.scss */
+  header #main-header .carrinho-preco img {
+    position: relative;
+    top: 10px;
+  }
+}
+/* line 152, ../sass/style.scss */
+header #main-header .carrinho-preco span#preco-total {
+  font-size: 1.25em;
+}
+/* line 159, ../sass/style.scss */
+header #main-header .lista-cat ul:not(.nav-child) {
+  margin: 0;
+}
+/* line 162, ../sass/style.scss */
+header #main-header .lista-cat ul:not(.nav-child) li {
+  display: inline-block;
+  position: relative;
+}
+/* line 166, ../sass/style.scss */
+header #main-header .lista-cat ul:not(.nav-child) li ul.nav-child {
+  margin: 0;
+  display: none;
+  position: absolute;
+  z-index: 500;
+  width: 100%;
+}
+/* line 173, ../sass/style.scss */
+header #main-header .lista-cat ul:not(.nav-child) li ul.nav-child li {
+  display: block !important;
+}
+/* line 176, ../sass/style.scss */
+header #main-header .lista-cat ul:not(.nav-child) li ul.nav-child li a {
+  display: block;
+  width: 100%;
+  color: white !important;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+/* line 10, ../sass/style.scss */
+header #main-header .lista-cat .menu-livros ul li a {
+  background-color: #ff7200;
+  border-top: 1px solid #ff8e33;
+  border-bottom: 1px solid #ff8e33;
+}
+/* line 15, ../sass/style.scss */
+header #main-header .lista-cat .menu-livros ul li a:hover {
+  background-color: #ff8e33;
+}
+/* line 10, ../sass/style.scss */
+header #main-header .lista-cat .menu-uniformes ul li a {
+  background-color: #3d165e;
+  border-top: 1px solid #582087;
+  border-bottom: 1px solid #582087;
+}
+/* line 15, ../sass/style.scss */
+header #main-header .lista-cat .menu-uniformes ul li a:hover {
+  background-color: #582087;
+}
+/* line 10, ../sass/style.scss */
+header #main-header .lista-cat .menu-materiais ul li a {
+  background-color: #017;
+  border-top: 1px solid #0018aa;
+  border-bottom: 1px solid #0018aa;
+}
+/* line 15, ../sass/style.scss */
+header #main-header .lista-cat .menu-materiais ul li a:hover {
+  background-color: #0018aa;
+}
+
+/* line 195, ../sass/style.scss */
+.container {
+  padding-top: 20px;
+}
+
+/* line 199, ../sass/style.scss */
+#buscar {
+  margin-top: 20px;
+}
+/* line 203, ../sass/style.scss */
+#buscar input {
+  height: 41px;
+}
+
+/* line 208, ../sass/style.scss */
+.main-block {
+  border: 1px solid #e7e7e7;
+  padding: 15px;
+}
+/* line 213, ../sass/style.scss */
+.main-block .mb-header {
+  padding: 2px 10px;
+}
+/* line 216, ../sass/style.scss */
+.main-block .mb-header h1, .main-block .mb-header h2, .main-block .mb-header h3, .main-block .mb-header h4 {
+  color: white !important;
+}
+/* line 221, ../sass/style.scss */
+.main-block .mb-body {
+  padding: 15px 0;
+}
+
+/* line 226, ../sass/style.scss */
+.produtos-slider {
+  padding: 0px 60px;
+}
+/* line 229, ../sass/style.scss */
+.produtos-slider .slick-arrow {
+  background-color: transparent;
+  display: inline-block;
+  color: black;
+  padding: 8px 16px;
+  font-size: 22px;
+  position: absolute;
+  z-index: 500;
+  outline: none;
+}
+/* line 239, ../sass/style.scss */
+.produtos-slider .slick-arrow.slick-prev {
+  left: 0px;
+  top: 35%;
+}
+/* line 244, ../sass/style.scss */
+.produtos-slider .slick-arrow.slick-next {
+  right: 0px;
+  top: 35%;
+}
+/* line 249, ../sass/style.scss */
+.produtos-slider .slick-arrow:hover {
+  opacity: 0.75;
+}
+
+/* line 255, ../sass/style.scss */
+.produto {
+  padding: 10px;
+  text-align: center !important;
+}
+/* line 260, ../sass/style.scss */
+.produto a {
+  outline: none;
+  color: #555;
+}
+/* line 266, ../sass/style.scss */
+.produto h5 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+/* line 272, ../sass/style.scss */
+.produto figure .produto-thumb {
+  width: 100%;
+}
+/* line 279, ../sass/style.scss */
+.produto:hover figure.zoom img {
+  transform: scale(1.1);
+}
+/* line 285, ../sass/style.scss */
+.produto .preco {
+  font-size: 18px;
+}
+
+/* line 290, ../sass/style.scss */
+#the-footer {
+  margin-top: 20px;
+  padding-top: 10px;
+  background-color: #a5a5a5;
+  min-height: 100px;
+}
+@media screen and (min-width: 1000px) {
+  /* line 297, ../sass/style.scss */
+  #the-footer .footer-logo {
+    float: left;
+  }
+  /* line 301, ../sass/style.scss */
+  #the-footer .footer-links {
+    float: right !important;
+    text-align: right;
+  }
+}
+/* line 307, ../sass/style.scss */
+#the-footer .footer-links {
+  text-transform: uppercase;
+}
+/* line 308, ../sass/style.scss */
+#the-footer .footer-links a {
+  color: white !important;
+}
